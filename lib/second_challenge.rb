@@ -1,3 +1,5 @@
+
+
 def second_challenge
   groceries = {
    dairy: ["milk", "yogurt", "cheese"],
@@ -6,8 +8,15 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  #code your solution here!
-
-  
-
+  grocery_items = groceries.values
+  new_list = []
+  grocery_items.each do |group|
+      group.each do |item|
+          new_list << item
+      end
+  end
+  new_list
 end
+
+
+
